@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All Yono Games</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+        body {
+            background-color: #f4f6f9;
+            color: #333;
+        }
+        /* Header */
+        header {
+            background-color: #0066cc;
+            color: white;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 15px;
+        }
+        .logo-area {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        .logo-area img {
+            width: 35px;
+            height: 35px;
+            border-radius: 50%;
+        }
+        .header-right {
+            display: flex;
+            gap: 15px;
+            align-items: center;
+        }
+        .menu-btn {
+            background: none;
+            border: none;
+            color: white;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        /* Navigation Buttons */
+        .nav-buttons {
+            display: flex;
+            gap: 8px;
+            padding: 10px;
+            background-color: #ffffff;
+            overflow-x: auto;
+            white-space: nowrap;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+        }
+        .nav-btn {
+            background-color: #0066cc;
+            color: white;
+            border: none;
+            padding: 8px 15px;
+            border-radius: 20px;
+            font-size: 14px;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+
+        /* Hero Text Section */
+        .hero-section {
+            background-color: #0088cc;
+            color: white;
+            padding: 15px;
+            font-size: 13px;
+            line-height: 1.4;
+        }
+        .telegram-banner {
+            background-color: white;
+            color: #333;
+            margin: 10px;
+            padding: 10px;
+            border-radius: 8px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-weight: bold;
+        }
+        .join-now-btn {
+            background-color: #00b33c;
+            color: white;
+            border: none;
+            padding: 6px 12px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 13px;
+        }
+
+        /* Tabs */
+        .tabs {
+            display: flex;
+            margin: 10px;
+            gap: 10px;
+        }
+        .tab {
+            flex: 1;
+            padding: 12px;
+            text-align: center;
+            font-weight: bold;
+            border-radius: 8px;
+            cursor: pointer;
+        }
+        .tab.active {
+            background-color: #0066cc;
+            color: white;
+        }
+        .tab.inactive {
+            background-color: white;
+            color: #333;
+            border: 1px solid #ddd;
+        }
+
+        /* App List */
+        .app-list {
+            background-color: white;
+            margin: 10px;
+            border-radius: 8px;
+            padding: 10px;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+        }
+        .app-item {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 10px 0;
+            border-bottom: 1px solid #eee;
+        }
+        .app-item:last-child {
+            border-bottom: none;
+        }
+        .app-info {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+        .app-index {
+            font-weight: bold;
+            color: #666;
+            width: 15px;
+        }
+        .app-icon {
+            width: 45px;
+            height: 45px;
+            border-radius: 10px;
+        }
+        .app-details h4 {
+            font-size: 15px;
+            color: #cc0000;
+            margin-bottom: 3px;
+        }
+        .app-details p {
+            font-size: 12px;
+            color: #28a745;
+        }
+        .download-btn {
+            background-color: #28a745;
+            color: white;
+            border: none;
+            padding: 7px 14px;
+            border-radius: 5px;
+            font-size: 13px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        /* Footer Bottom Menu */
+        .bottom-nav {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            background-color: white;
+            display: flex;
+            justify-content: space-around;
+            padding: 10px;
+            box-shadow: 0 -2px 5px rgba(0,0,0,0.1);
+        }
+        .bottom-btn {
+            background-color: white;
+            border: 1px solid #0066cc;
+            color: #0066cc;
+            padding: 8px 25px;
+            border-radius: 20px;
+            font-weight: bold;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+        .bottom-btn.share {
+            border-color: #ff6600;
+            color: #ff6600;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="logo-area">
+            <span style="background: gold; padding: 5px; border-radius: 50%;">👑</span>
+            <h3>All Yono Games</h3>
+        </div>
+        <div class="header-right">
+            <span>✈️</span>
+            <button class="menu-btn">☰ Menu</button>
+        </div>
+    </header>
+
+    <!-- Navigation Buttons -->
+    <div class="nav-buttons">
+        <button class="nav-btn">🏠 Home</button>
+        <button class="nav-btn">👤 About</button>
+        <button class="nav-btn">📞 Contact</button>
+        <button class="nav-btn">⚠️ Disclaimer</button>
+    </div>
+
+    <!-- Hero Description -->
+    <div class="hero-section">
+        <p><strong>All Yono Games</strong> is a platform where users can discover trending gaming apps, popular Rummy games, Slots, Bingo, Arcade, and Spin games in one place...</p>
+    </div>
+
+    <!-- Telegram Channel Banner -->
+    <div class="telegram-banner">
+        <span>✈️ Join Our Telegram Channel</span>
+        <button class="join-now-btn">Join Now</button>
+    </div>
+
+    <!-- Tabs -->
+    <div class="tabs">
+        <div class="tab active">All Yono Apps</div>
+        <div class="tab inactive">Other Apps</div>
+    </div>
+
+    <!-- App List -->
+    <div class="app-list">
+        <!-- App 1 -->
+        <div class="app-item">
+            <div class="app-info">
+                <span class="app-index">1.</span>
+                <img src="https://via.placeholder.com/45" alt="App Icon" class="app-icon">
+                <div class="app-details">
+                    <h4>All Yono Games</h4>
+                    <p>🎁 Bonus Upto ₹100 | Min ₹100</p>
+                </div>
+            </div>
+            <button class="download-btn">Download</button>
+        </div>
+
+        <!-- App 2 -->
+        <div class="app-item">
+            <div class="app-info">
+                <span class="app-index">2.</span>
+                <img src="https://via.placeholder.com/45" alt="App Icon" class="app-icon">
+                <div class="app-details">
+                    <h4>VIP Rummy</h4>
+                    <p>🎁 Bonus Upto ₹110 | Min ₹100</p>
+                </div>
+            </div>
+            <button class="download-btn">Download</button>
+        </div>
+
+        <!-- App 3 -->
+        <div class="app-item">
+            <div class="app-info">
+                <span class="app-index">3.</span>
+                <img src="https://via.placeholder.com/45" alt="App Icon" class="app-icon">
+                <div class="app-details">
+                    <h4>Diwa Wow</h4>
+                    <p>🎁 Bonus Upto ₹110 | Min ₹100</p>
+                </div>
+            </div>
+            <button class="download-btn">Download</button>
+        </div>
+
+        <!-- App 4 -->
+        <div class="app-item">
+            <div class="app-info">
+                <span class="app-index">4.</span>
+                <img src="https://via.placeholder.com/45" alt="App Icon" class="app-icon">
+                <div class="app-details">
+                    <h4>Diwa Spin</h4>
+                    <p>🎁 Bonus Upto ₹110 | Min ₹100</p>
+                </div>
+            </div>
+            <button class="download-btn">Download</button>
+        </div>
+    </div>
+
+    <!-- Bottom Navigation -->
+    <div class="bottom-nav">
+        <button class="bottom-btn">✈️ Telegram</button>
+        <button class="bottom-btn share">📤 Share Site</button>
+    </div>
+
+</body>
+</html>
